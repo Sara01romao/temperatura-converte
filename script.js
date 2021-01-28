@@ -1,16 +1,19 @@
-var ce= document.getElementsByClassName('celsius').value;
 
-function calcular(c){
-    var f= "";
+
+var c= document.getElementById('celsius').value;
+var f= "";
+
+function calcular(){
+   
 
 //fomula para converte para fhrenheit
 
-      f=(180*(c+32))/100;
+      f=c*1.8000+32;
+     
+
+      document.getElementById("resultado").innerHTML = f;
+
+}
 
 
-    document.getElementsByClassName('resultado').value= f;
-  }
-
-  calcular(ce);
-
-
+/** c=(f-32)/1.8000 */
