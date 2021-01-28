@@ -6,12 +6,27 @@
   <title>Document</title>
 </head>
 <body>
-     <input id="celsius" type="number" placeholder="grau celsius" required>
+  <h3>Converte Celsius para Fahrenheit</h3>
+     <input id="grauC" type="number" placeholder="grau celsius" required>
+     <button   onclick="convertC()">Calcular</button>
 
-     <button  type="submit" onclick="calcular();">Calcular</button>
+     <p id="resultC"></p>
 
-     <p id="resultado"></p>
+     <div class="f">
 
+      <h3>Converte  Fahrenheit para Celsius</h3>
+      <input id="grauF" type="number" placeholder="grau fahrenheit" required>
+      
+
+      <button   onclick="convertF()">Calcular</button>
+ 
+      <p id="resultF"></p>
+''
+     </div>
+<hr>
+<br>
+
+    
 
 
      <script src="script.js"></script>
