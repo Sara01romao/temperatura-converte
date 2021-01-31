@@ -6,7 +6,29 @@
   <title>Document</title>
 </head>
 <body>
+
+
+
+
   <h3>Converte Celsius para Fahrenheit</h3>
+
+    <div>
+      <select  id="op" onChange="update()">
+        
+        <option value="cf" selected >Graus Celsius para Fahrenheit</option>
+        <option value="fc">Graus Fahrenheit para Celsius</option>
+      </select>
+
+      <h1 id="aqui"></h1>
+      <h3 id="teste"></h3>
+    </div>
+
+
+
+
+
+
+
      <input id="grauC" type="number" placeholder="grau celsius" required>
      <button   onclick="convertC()">Calcular</button>
 
@@ -21,7 +43,7 @@
       <button   onclick="convertF()">Calcular</button>
  
       <p id="resultF"></p>
-''
+
      </div>
 <hr>
 <br>

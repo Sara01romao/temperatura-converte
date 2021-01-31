@@ -1,4 +1,30 @@
 
+function update(){
+      var select= document.getElementById('op');
+      var valor = select.options[select.selectedIndex].value;
+      
+      
+      document.getElementById('aqui').innerHTML= valor;
+
+     
+      if(valor=='cf'){
+            var n1=1;
+            document.getElementById('teste').innerHTML=n1;
+      }else{
+            var n2=2;
+            document.getElementById('teste').innerHTML=n2;
+     
+      }
+     
+}
+
+var rp=update();
+
+
+ 
+
+
+
 
 var c= "";
 var f= "";
@@ -16,6 +42,7 @@ function convertC(){
      
       document.getElementById('resultC').innerHTML=f+" F°";
 }
+
 
 
 
