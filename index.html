@@ -12,6 +12,9 @@
   <h3>Converte Celsius para Fahrenheit</h3>
 
     <div>
+     
+
+      <input id="v" type="number" placeholder="Grau" required>
       <select  id="op" onChange="update()" required>
 
         <option value="" disabled="" selected>selecione o tipo</option>
@@ -19,16 +22,13 @@
         <option value="cf">Graus Celsius para Fahrenheit</option>
         <option value="fc">Graus Fahrenheit para Celsius</option>
       </select>
-
-      <input id="v" type="number" placeholder="Grau" required>
-      <button onclick="calcular()">Calcular</button>
     
       <h2 id="t2" style="color: brown;"></h2>
     
     
 
       <h1 id="aqui"></h1>
-      <!-- <h3 id="teste"></h3> -->
+      <button onclick="clean()">Limpa</button>
       <br><br><hr>
     </div>
 
@@ -36,26 +36,7 @@
      
 
 
-     <!-- <input id="grauC" type="number" placeholder="grau celsius" required>
-     <button   onclick="convertC()">Calcular</button>
-
-     <p id="resultC"></p>
-
-     <div class="f">
-
-      <h3>Converte  Fahrenheit para Celsius</h3>
-      <input id="grauF" type="number" placeholder="grau fahrenheit" required>
-      
-
-      <button   onclick="convertF()">Calcular</button>
- 
-      <p id="resultF"></p>
-
-     </div>
-<hr>
-<br>
-
-     -->
+     
 
 
      <script src="script.js"></script>
