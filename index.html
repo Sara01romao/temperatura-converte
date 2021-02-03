@@ -3,18 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
   <title>Document</title>
 </head>
 <body>
 
  
 
-  <h3>Converte Celsius para Fahrenheit</h3>
+  <h1 class="title">Converte Celsius para Fahrenheit</h1>
 
-    <div>
+    <div class="main">
      
 
       <input id="v" type="number" placeholder="Grau" required>
+      <br>
+
       <select  id="op" onChange="update()" required>
 
         <option value="" disabled="" selected>selecione o tipo</option>
@@ -24,11 +27,16 @@
       </select>
     
       <h2 id="t2" style="color: brown;"></h2>
+    <br>
     
-    
-
+    <div class="resultado">
       <h1 id="aqui"></h1>
-      <button onclick="clean()">Limpa</button>
+      
+    </div>
+      
+      <button onclick="clean()">Novo Cálculo</button>
+   
+      
       <br><br><hr>
     </div>
 
