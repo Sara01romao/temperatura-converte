@@ -15,26 +15,26 @@
     <div class="main">
      
 
-      <input id="v" type="number" placeholder="Grau" required>
+      <input id="v" type="number" placeholder="Grau" onchange="teste()"  required>
       <br>
 
-      <select  id="op" onChange="update()" required>
+      <select  id="op" onChange="update(), teste()"  disabled="false" required>
 
-        <option value="" disabled="" selected>selecione o tipo</option>
+        <option value=" " disabled="" selected>selecione o tipo</option>
         
         <option value="cf">Graus Celsius para Fahrenheit</option>
         <option value="fc">Graus Fahrenheit para Celsius</option>
       </select>
     
-      <h2 id="t2" style="color: brown;"></h2>
+      
     <br>
     
     <div class="resultado">
-      <h1 id="aqui"></h1>
+      <h1 id="aqui" ></h1>
       
     </div>
       
-      <button onclick="clean()">Novo Cálculo</button>
+      <button onclick="clean(aqui)">Novo Cálculo</button>
    
       
       <br><br><hr>
